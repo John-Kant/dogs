@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CarouselData } from './CarouselData';
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
 import "./Carousel.css"
 
 const ImageSlider = ({ slides }) => {
@@ -21,8 +21,8 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <section className='slider'>
-      <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
-      <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
+      <FaAngleLeft className='left-arrow' onClick={prevSlide} />
+      <FaAngleRight className='right-arrow' onClick={nextSlide} />
       {CarouselData.map((slide, index) => {
         return (
           <div
