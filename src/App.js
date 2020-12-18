@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar/Navbar"
 import { CarouselData } from "./Components/Hero/CarouselData"
 import Carousel from "./Components/Hero/Carousel"
 import About from "./Components/Navbar/About"
+import Management from "./Components/Navbar/Management"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Carousel slides={CarouselData} />
       <About />
+      <Management />
       <Switch>
         <Route exact path="/">
         </Route>
